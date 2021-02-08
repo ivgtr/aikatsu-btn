@@ -1,7 +1,9 @@
 import React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import '../assets/style.scss'
+import { RecoilRoot } from 'recoil'
+import Control from '../components/Control'
+import '../styles/styles.scss'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -10,9 +12,12 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width,height=device-height" key="viewport" />
         <meta name="theme-color" content="#087da1" key="themeColor" />
       </Head>
-      <main className="root">
-        <Component {...pageProps} />
-      </main>
+      <RecoilRoot>
+        <main className="root">
+          <Control />
+          <Component {...pageProps} />
+        </main>
+      </RecoilRoot>
     </>
   )
 }
