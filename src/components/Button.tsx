@@ -28,7 +28,7 @@ const Button: React.FC<props> = ({ kakugen }) => {
       onClick={() => {
         play(kakugen.link)
       }}
-      className="m-1"
+      className="m-1 cursor-pointer"
     >{`${kakugen.id} ${kakugen.title}`}</button>
   )
 }
