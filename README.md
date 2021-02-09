@@ -3,7 +3,7 @@
   <p align="center">
     <a href="https://aikatsu.odayaka.work/">https://aikatsu.odayaka.work/</a>
   </p>
-  <p align="center">アイカツ！格言を再生するボタン</p>
+  <p align="center">アイカツ！格言を再生するボタン、及びAPI</p>
 </div>
 
 --- 
