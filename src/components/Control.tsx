@@ -8,10 +8,12 @@ const Control: React.FC = () => {
   return (
     <button
       onClick={() => {
-        audio.play()
+        audio.pause()
+        audio.currentTime = 0
       }}
+      className="fixed right-4 top-4"
     >
-      stop
+      停止
     </button>
   )
 }

@@ -3,6 +3,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { RecoilRoot } from 'recoil'
 import Control from '../components/Control'
+import Footer from '../components/Footer'
 import '../styles/styles.scss'
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -13,10 +14,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="theme-color" content="#087da1" key="themeColor" />
       </Head>
       <RecoilRoot>
+        <Control />
         <main className="root">
-          <Control />
           <Component {...pageProps} />
         </main>
+        <Footer />
       </RecoilRoot>
     </>
   )
