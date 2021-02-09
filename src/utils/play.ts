@@ -1,8 +1,6 @@
 import { atom } from 'recoil'
 
-const value: any = null
-
-export const audioState = atom({
+export const audioState = atom<HTMLAudioElement | null>({
   key: 'audioKey',
-  default: value
+  default: null
 })

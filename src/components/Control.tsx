@@ -4,7 +4,7 @@ import { audioState } from '../utils/play'
 import kakugen from '../assets/kakugen.json'
 
 const Control: React.FC = () => {
-  const [audio, setAudio] = useRecoilState<HTMLAudioElement>(audioState)
+  const [audio, setAudio] = useRecoilState(audioState)
 
   useEffect(() => {}, [audio])
 
@@ -26,6 +26,7 @@ const Control: React.FC = () => {
       </button>
       <button
         onClick={() => {
+          if (!audio) return
           audio.pause()
           audio.currentTime = 0
         }}

@@ -11,7 +11,7 @@ type props = {
 }
 
 const Button: React.FC<props> = ({ kakugen }) => {
-  const [audio, setAudio] = useRecoilState<HTMLAudioElement>(audioState)
+  const [audio, setAudio] = useRecoilState(audioState)
 
   const play = (link: string) => {
     if (audio) {
