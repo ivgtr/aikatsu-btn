@@ -3,12 +3,14 @@ import { Timeline } from 'react-twitter-widgets'
 
 import Button from '../components/Button'
 import Ad from '../components/Ad'
+import Share from '../components/Share'
+
 import kakugen from '../assets/kakugen.json'
 
 const Home: FC = () => {
   return (
     <div className="container mx-auto px-2">
-      <h1 className="text-center mt-12 text-2xl font-bold">アイカツ！格言ボタン</h1>
+      <h1 className="text-center mt-12 text-2xl font-bold">アイカツ格言ボタン</h1>
       <Ad />
       <article>
         <section className="my-8">
@@ -54,6 +56,8 @@ const Home: FC = () => {
           }}
         />
       </div>
+
+      <Share />
     </div>
   )
 }

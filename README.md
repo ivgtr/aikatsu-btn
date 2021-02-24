@@ -1,9 +1,9 @@
 <div align="center">
-  <h3 align="center">アイカツ！格言ボタン</h3>
+  <h3 align="center">アイカツ格言ボタン</h3>
   <p align="center">
     <a href="https://aikatsu.odayaka.work/">https://aikatsu.odayaka.work/</a>
   </p>
-  <p align="center">アイカツ！格言を再生するボタン、及びAPI</p>
+  <p align="center">アイカツ格言を再生するボタン、及びAPI</p>
 </div>
 
 --- 

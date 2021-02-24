@@ -14,7 +14,7 @@ const Ad: React.FC = () => {
         </a>
       </h2>
       <div className="max-w-md m-2">
-        <img src="/logo.jpg" alt="logo" className="w-full" />
+        <img src="/planet.jpg" alt="アイカツプラネット！" className="w-full" />
       </div>
     </>
   )
