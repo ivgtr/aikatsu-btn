@@ -40,19 +40,14 @@ body {
       游ゴシック体, 游ゴシック, メイリオ, meiryo, ｍｓ ｐゴシック, ms pgothic,
       sans-serif;
     font-size: 11px;
-    color: -internal-light-dark(black, white);
     text-align: center;
     text-indent: 0;
     text-shadow: none;
     text-transform: none;
     letter-spacing: normal;
     background-color: gainsboro;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-style: outset;
-    border-width: 2px;
-    border-image: initial;
+    border: 2px outset;
     word-spacing: normal;
-    -webkit-writing-mode: horizontal-tb !important;
     appearance: auto;
     text-rendering: auto;
   }
