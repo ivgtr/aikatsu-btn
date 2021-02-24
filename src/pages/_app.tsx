@@ -24,7 +24,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:site_name" content={title} />
         <meta
           property="og:image"
-          content="https://lh3.googleusercontent.com/D4SiydTja38u0dV9gfjR0CMWmSdV59qBYBQt6KuHl_Q8AUhJBIMOAuB-nmhyIHT8HvLFLZUpATz7XLAo6UxxF4jv2zSpv5N75mJ0vUr6p1Syf-UFQtYvAB58Y3KI8aiV1gnQ1ZC2mg=w1200"
+          content="https://lh3.googleusercontent.com/CHCyzlqdkS0q16jZmhWYPCWTCOIaMBxjwGm3UVJx4S8123m9A22_vDHIHGmclIcADnIhjHHPChQMTU58qiwoEFFneLHbbVf7bhKUTY90l4b0D033MguOc1JoVVexrtbtEA17tZ7GdA=w1200"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="shortcut icon" href="/favicon.ico" />
