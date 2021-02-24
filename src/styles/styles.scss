@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   background: linear-gradient(
@@ -29,18 +27,33 @@ body {
       0 0 / 25px 25px;
 }
 
-button {
-  display: inline-block;
-  padding: 1px 7px 2px;
-  margin: 0;
-  font: 400 11px system-ui;
-  color: initial;
-  text-align: start;
-  background-color: gainsboro;
-  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-  border-style: solid;
-  border-width: 1px;
-  -webkit-writing-mode: horizontal-tb !important;
-  -webkit-appearance: button;
-  text-rendering: auto;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1px 6px;
+    font-family: "Noto Sans JP", -apple-system, blinkmacsystemfont,
+      ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, roboto, yugothic, yu gothic,
+      游ゴシック体, 游ゴシック, メイリオ, meiryo, ｍｓ ｐゴシック, ms pgothic,
+      sans-serif;
+    font-size: 11px;
+    color: -internal-light-dark(black, white);
+    text-align: center;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    background-color: gainsboro;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-style: outset;
+    border-width: 2px;
+    border-image: initial;
+    word-spacing: normal;
+    -webkit-writing-mode: horizontal-tb !important;
+    appearance: auto;
+    text-rendering: auto;
+  }
 }

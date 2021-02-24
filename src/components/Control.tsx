@@ -21,7 +21,7 @@ const Control: React.FC = () => {
 
   return (
     <div className="fixed right-4 top-4">
-      <button onClick={randomPlay} className="m-1 cursor-pointer">
+      <button onClick={randomPlay} className="btn m-1 cursor-pointer">
         ランダム再生
       </button>
       <button
@@ -30,7 +30,7 @@ const Control: React.FC = () => {
           audio.pause()
           audio.currentTime = 0
         }}
-        className="m-1 cursor-pointer"
+        className="btn m-1 cursor-pointer"
       >
         停止
       </button>
