@@ -6,7 +6,7 @@ const Share: React.FC = () => {
   const [shareTitle, setShareTitle] = useState<string>('')
   const randomTitle = () => {
     const { title, id } = kakugen[Math.floor(Math.random() * kakugen.length)]
-    setShareTitle(`アイカツ格言\n${id}話 ${title}`)
+    setShareTitle(`今週のアイカツ格言！\n${id}話 ${title}`)
   }
   useEffect(() => {
     randomTitle()

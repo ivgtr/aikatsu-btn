@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import '../styles/styles.scss'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const title = 'アイカツ格言ボタン'
+  const title = 'アイカツ格言ボタン！'
   const description = 'アイカツ格言が再生されるボタン置き場'
 
   return (
