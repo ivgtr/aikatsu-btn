@@ -23,7 +23,10 @@ const Control: React.FC<Props> = ({ kakugen }) => {
 
   return (
     <div className="fixed right-4 top-4">
-      <button onClick={randomPlay} className="btn m-1 cursor-pointer">
+      <button
+        onClick={randomPlay}
+        className="m-1 cursor-pointer text-xs px-2 py-1 bg-yellow-400 text-white font-semibold rounded hover:bg-yellow-500"
+      >
         ランダム再生
       </button>
       <button
@@ -32,7 +35,7 @@ const Control: React.FC<Props> = ({ kakugen }) => {
           audio.pause();
           audio.currentTime = 0;
         }}
-        className="btn m-1 cursor-pointer"
+        className="m-1 cursor-pointer text-xs px-2 py-1 bg-red-400 text-white font-semibold rounded hover:bg-red-500"
       >
         停止
       </button>
