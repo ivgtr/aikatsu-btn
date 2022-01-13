@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         TOKYOに帰属します。
       </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

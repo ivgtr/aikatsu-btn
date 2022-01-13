@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import { TwitterShareButton, TwitterIcon } from 'react-share'
-import kakugen from '../assets/kakugen.json'
+import React, { useEffect, useState } from "react";
+import { TwitterIcon, TwitterShareButton } from "react-share";
+import kakugen from "../assets/kakugen.json";
 
 const Share: React.FC = () => {
-  const [shareTitle, setShareTitle] = useState<string>('')
+  const [shareTitle, setShareTitle] = useState<string>("");
   const randomTitle = () => {
-    const { title, id } = kakugen[Math.floor(Math.random() * kakugen.length)]
-    setShareTitle(`今週のアイカツ格言！\n${id}話 ${title}`)
-  }
+    const { title, id } = kakugen[Math.floor(Math.random() * kakugen.length)];
+    setShareTitle(`今週のアイカツ格言！\n${id}話 ${title}`);
+  };
   useEffect(() => {
-    randomTitle()
-  }, [])
+    randomTitle();
+  }, []);
   return (
     <nav className="fixed right-4 bottom-4">
       <TwitterShareButton
@@ -21,7 +21,7 @@ const Share: React.FC = () => {
         <TwitterIcon size={32} round />
       </TwitterShareButton>
     </nav>
-  )
-}
+  );
+};
 
-export default Share
+export default Share;

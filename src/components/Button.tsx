@@ -1,36 +1,33 @@
-import React from 'react'
-import { useRecoilState } from 'recoil'
-import { audioState } from '../utils/play'
+import React from "react";
+import { useRecoilState } from "recoil";
+import type { Kakugen } from "../types/kakugen";
+import { audioState } from "../utils/play";
 
 type props = {
-  kakugen: {
-    id: number
-    title: string
-    link: string
-  }
-}
+  kakugen: Kakugen;
+};
 
 const Button: React.FC<props> = ({ kakugen }) => {
-  const [audio, setAudio] = useRecoilState(audioState)
+  const [audio, setAudio] = useRecoilState(audioState);
 
   const play = (link: string) => {
     if (audio) {
-      audio.pause()
-      audio.currentTime = 0
+      audio.pause();
+      audio.currentTime = 0;
     }
-    const tmp = new Audio(link)
-    setAudio(tmp)
-    tmp.play()
-  }
+    const tmp = new Audio(link);
+    setAudio(tmp);
+    tmp.play();
+  };
 
   return (
     <button
       onClick={() => {
-        play(kakugen.link)
+        play(kakugen.link);
       }}
       className="btn m-1 cursor-pointer"
     >{`${kakugen.id} ${kakugen.title}`}</button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
