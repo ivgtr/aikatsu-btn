@@ -1,14 +1,13 @@
-import React from 'react'
-import { AppProps } from 'next/app'
-import Head from 'next/head'
-import { RecoilRoot } from 'recoil'
-import Control from '../components/Control'
-import Footer from '../components/Footer'
-import '../styles/styles.scss'
+import { AppProps } from "next/app";
+import Head from "next/head";
+import React from "react";
+import { RecoilRoot } from "recoil";
+import Footer from "../components/Footer";
+import "../styles/styles.scss";
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const title = 'アイカツ格言ボタン！'
-  const description = 'アイカツ格言が再生されるボタン置き場'
+  const title = "アイカツ格言ボタン！";
+  const description = "アイカツ格言が再生されるボタン置き場";
 
   return (
     <>
@@ -30,14 +29,13 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <RecoilRoot>
-        <Control />
         <main className="root">
           <Component {...pageProps} />
         </main>
         <Footer />
       </RecoilRoot>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

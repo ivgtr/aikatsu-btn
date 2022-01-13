@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { useRecoilState } from "recoil";
-import kakugen from "../assets/kakugen.json";
+import type { Kakugen } from "../types/kakugen";
 import { audioState } from "../utils/play";
 
-const Control: React.FC = () => {
+type Props = { kakugen: Kakugen[] };
+
+const Control: React.FC<Props> = ({ kakugen }) => {
   const [audio, setAudio] = useRecoilState(audioState);
 
   useEffect(() => {}, [audio]);

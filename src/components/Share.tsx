@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { TwitterIcon, TwitterShareButton } from "react-share";
-import kakugen from "../assets/kakugen.json";
+import type { Kakugen } from "../types/kakugen";
 
-const Share: React.FC = () => {
+type Props = { kakugen: Kakugen[] };
+
+const Share: React.FC<Props> = ({ kakugen }) => {
   const [shareTitle, setShareTitle] = useState<string>("");
   const randomTitle = () => {
     const { title, id } = kakugen[Math.floor(Math.random() * kakugen.length)];
