@@ -7,14 +7,14 @@ const CACHE_MAX_AGE = 60 * 60 * 24 * 31;
 
 const handler: VercelApiHandler = async (req, res) => {
   try {
-    const id = req.query.id;
-    if (Array.isArray(id)) throw new Error("must not be array");
+    const ep = req.query.ep;
+    if (Array.isArray(ep)) throw new Error("must not be array");
 
     const jsonPath = path.join(process.cwd(), "src", "assets", "kakugen.json");
     const jsonText = fs.readFileSync(jsonPath, "utf-8");
     const kakugen = JSON.parse(jsonText) as Kakugen[];
 
-    const filterKakugen = kakugen.filter((item) => item.id === Number(id));
+    const filterKakugen = kakugen.filter((item) => item.id === Number(ep));
 
     res.status(200);
     res.setHeader("Content-Type", "application/json");
