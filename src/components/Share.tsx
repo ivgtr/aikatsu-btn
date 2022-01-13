@@ -15,13 +15,18 @@ const Share: React.FC<Props> = ({ kakugen }) => {
   }, []);
   return (
     <nav className="fixed right-4 bottom-4">
-      <TwitterShareButton
-        url="https://aikatsu.odayaka.work/"
-        title={shareTitle}
-        onClick={() => randomTitle()}
-      >
-        <TwitterIcon size={32} round />
-      </TwitterShareButton>
+      <ul>
+        <li className="flex flex-col items-center">
+          <span className="text-xs">共有する</span>
+          <TwitterShareButton
+            url="https://aikatsu.odayaka.work/"
+            title={shareTitle}
+            onClick={() => randomTitle()}
+          >
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+        </li>
+      </ul>
     </nav>
   );
 };
