@@ -38,6 +38,6 @@ $ curl https://aikatsu.odayaka.work/api/season/{season} | jq
 
 MIT ©[ivgtr](https://github.com/ivgtr)
 
-[ivgtr](https://github.com/ivgtr)が作成しましたが、アイカツ！及びアイカツプラネット！に関するすべての著作権は &copy;BNP/BANDAI, DENTSU, TV TOKYO に帰属します。
+アイカツ！及びアイカツプラネット！に関するすべての著作権は &copy;BNP/BANDAI, DENTSU, TV TOKYO に帰属します。
 
 [![Github Follow](https://img.shields.io/github/followers/ivgtr?style=social)](https://github.com/ivgtr) [![Twitter Follow](https://img.shields.io/twitter/follow/mawaru_hana?style=social)](https://twitter.com/mawaru_hana) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![Donate](https://img.shields.io/badge/%EF%BC%84-support-green.svg?style=flat-square)](https://www.buymeacoffee.com/ivgtr)
